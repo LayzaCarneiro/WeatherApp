@@ -12,6 +12,7 @@
 		AE63AA762C9BBFFA006303C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63AA752C9BBFFA006303C2 /* ViewController.swift */; };
 		AE63AA7B2C9BBFFB006303C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE63AA7A2C9BBFFB006303C2 /* Assets.xcassets */; };
 		AE63AA7E2C9BBFFB006303C2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AE63AA7D2C9BBFFB006303C2 /* Base */; };
+		AEA1DF862CA258D6003D3B34 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1DF852CA258D6003D3B34 /* HourlyForecastCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AE63AA7A2C9BBFFB006303C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE63AA7D2C9BBFFB006303C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE63AA7F2C9BBFFB006303C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA1DF852CA258D6003D3B34 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AE63AA7A2C9BBFFB006303C2 /* Assets.xcassets */,
 				AE63AA7C2C9BBFFB006303C2 /* LaunchScreen.storyboard */,
 				AE63AA7F2C9BBFFB006303C2 /* Info.plist */,
+				AEA1DF852CA258D6003D3B34 /* HourlyForecastCollectionViewCell.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				AE63AA762C9BBFFA006303C2 /* ViewController.swift in Sources */,
 				AE63AA722C9BBFFA006303C2 /* AppDelegate.swift in Sources */,
+				AEA1DF862CA258D6003D3B34 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				AE63AA742C9BBFFA006303C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
