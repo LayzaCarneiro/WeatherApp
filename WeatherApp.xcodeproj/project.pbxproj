@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2065182CEC2F3100960EAA /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2065172CEC2F2D00960EAA /* Color+Extensions.swift */; };
 		AE63AA722C9BBFFA006303C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63AA712C9BBFFA006303C2 /* AppDelegate.swift */; };
 		AE63AA742C9BBFFA006303C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63AA732C9BBFFA006303C2 /* SceneDelegate.swift */; };
 		AE63AA762C9BBFFA006303C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63AA752C9BBFFA006303C2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE2065172CEC2F2D00960EAA /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		AE63AA6E2C9BBFFA006303C2 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE63AA712C9BBFFA006303C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE63AA732C9BBFFA006303C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		AE63AA702C9BBFFA006303C2 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE2065172CEC2F2D00960EAA /* Color+Extensions.swift */,
 				AE63AA712C9BBFFA006303C2 /* AppDelegate.swift */,
 				AE63AA732C9BBFFA006303C2 /* SceneDelegate.swift */,
 				AE63AA752C9BBFFA006303C2 /* ViewController.swift */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2065182CEC2F3100960EAA /* Color+Extensions.swift in Sources */,
 				AE63AA762C9BBFFA006303C2 /* ViewController.swift in Sources */,
 				AE63AA722C9BBFFA006303C2 /* AppDelegate.swift in Sources */,
 				AEA1DF862CA258D6003D3B34 /* HourlyForecastCollectionViewCell.swift in Sources */,

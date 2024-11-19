@@ -9,8 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let primaryColor: String = "primaryColor"
-
     private lazy var backgroundView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "background")
@@ -32,7 +30,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 20)
         label.text = "Fortaleza"
         label.textAlignment = .center
-        label.textColor = UIColor(named: primaryColor)
+        label.textColor = UIColor.primaryColor
         
         return label.disableAutoresizingMask()
     }()
@@ -42,7 +40,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 70, weight: .bold)
         label.text = "32°C"
         label.textAlignment = .left
-        label.textColor = UIColor(named: primaryColor)
+        label.textColor = UIColor.primaryColor
         
         return label.disableAutoresizingMask()
     }()
@@ -59,7 +57,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Umidade"
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
 
         return label.disableAutoresizingMask()
     }()
@@ -84,7 +82,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Vento"
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
 
         return label.disableAutoresizingMask()
     }()
@@ -93,7 +91,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "10km/h"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
 
         return label.disableAutoresizingMask()
     }()
@@ -119,7 +117,7 @@ class ViewController: UIViewController {
     
     private lazy var hourlyForecastLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         label.text = "PREVISÃO POR HORA"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textAlignment = .center
@@ -133,7 +131,7 @@ class ViewController: UIViewController {
         layout.itemSize = CGSize(width: 67, height: 84)
         layout.sectionInset = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .clear
         collectionView.dataSource = self
         collectionView.register(HourlyForecastCollectionViewCell.self, forCellWithReuseIdentifier: HourlyForecastCollectionViewCell.identifier)
 
