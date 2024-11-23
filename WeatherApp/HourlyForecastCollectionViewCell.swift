@@ -9,7 +9,7 @@ import UIKit
 
 class HourlyForecastCollectionViewCell: UICollectionViewCell {
     
-    static let identifier: String = "HourlyForecast"
+    static let indentifier: String = "HourlyForecast"
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [hourLabel, iconImageView, temperatureLabel])
@@ -43,7 +43,8 @@ class HourlyForecastCollectionViewCell: UICollectionViewCell {
     
     private lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "sun")
+        imageView.image = UIImage(named: "sunIcon")
+        imageView.contentMode = .scaleAspectFit
         return imageView.disableAutoresizingMask()
     }()
     
