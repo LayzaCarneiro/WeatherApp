@@ -1,0 +1,39 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+
+# SwiftPM
+.build/
+Packages/
+.swiftpm/xcode/package.xcworkspace/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+Carthage/Build
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+fastlane/tmp
+
+# Firebase
+GoogleService-Info.plist
+
+# Secrets
+APIKey.plist
+
+# Others
+*.log
+*.tmp
+*.swp
+*.xcuserstate

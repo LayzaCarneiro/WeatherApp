@@ -16,8 +16,17 @@ struct City {
 class WeatherService {
     
     private let baseURL: String = "https://api.openweathermap.org/data/3.0/onecall"
-    private let apiKey: String = "e0a23789d11fbeaaaa65c7754e6cd229"
     private let session = URLSession.shared
+    
+    private let apiKey: String = {
+        guard let url = Bundle.main.url(forResource: "APIKey", withExtension: "plist"),
+              let data = try? Data(contentsOf: url),
+              let plist = try? PropertyListSerialization.propertyList(from: data, format: nil) as? [String: Any],
+              let key = plist["WeatherAPIKey"] as? String else {
+            fatalError("⚠️ API Key not found in Secrets.plist")
+        }
+        return key
+    }()
     
     func fetchData(city: City, _ completion: @escaping (ForecastResponse?) -> Void) {
         let urlString = "\(baseURL)?lat=\(city.lat)&lon=\(city.lon)&appid=\(apiKey)&units=metric"
@@ -91,13 +100,3 @@ struct Temp: Codable {
     let eve, morn: Double
 }
 
-// TODO: study -
-// classe x struct
-// singleton
-// @escaping
-// grand central dispatch
-// retain cycle
-// closures
-// delegate
-// arc
-// refazer teste neon em swift

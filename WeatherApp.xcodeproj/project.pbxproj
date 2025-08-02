@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE2065182CEC2F3100960EAA /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2065172CEC2F2D00960EAA /* Color+Extensions.swift */; };
+		AE38C0E42E3E9A1A007D0ACE /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE38C0E32E3E9A1A007D0ACE /* APIKey.plist */; };
 		AE4FCAEE2E33420000F63EF4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FCAED2E3341F900F63EF4 /* WeatherService.swift */; };
 		AE4FCAF02E343E4C00F63EF4 /* Core+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FCAEF2E343E4700F63EF4 /* Core+Extensions.swift */; };
 		AE63AA722C9BBFFA006303C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63AA712C9BBFFA006303C2 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		AE2065172CEC2F2D00960EAA /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		AE38C0E32E3E9A1A007D0ACE /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		AE4FCAED2E3341F900F63EF4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		AE4FCAEF2E343E4700F63EF4 /* Core+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core+Extensions.swift"; sourceTree = "<group>"; };
 		AE63AA6E2C9BBFFA006303C2 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 			children = (
 				AE4FCAEF2E343E4700F63EF4 /* Core+Extensions.swift */,
 				AE4FCAED2E3341F900F63EF4 /* WeatherService.swift */,
+				AE38C0E32E3E9A1A007D0ACE /* APIKey.plist */,
 				AEF5ADEF2E24A9FC0087EC0E /* UIView+Extensions.swift */,
 				AE2065172CEC2F2D00960EAA /* Color+Extensions.swift */,
 				AE63AA712C9BBFFA006303C2 /* AppDelegate.swift */,
@@ -140,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE38C0E42E3E9A1A007D0ACE /* APIKey.plist in Resources */,
 				AE63AA7B2C9BBFFB006303C2 /* Assets.xcassets in Resources */,
 				AE63AA7E2C9BBFFB006303C2 /* Base in Resources */,
 			);
