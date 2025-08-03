@@ -16,8 +16,7 @@ It uses the [OpenWeather API](https://openweathermap.org/) to fetch current cond
 ---
 
 ## 🖼️ Screenshots
-
-*(You can insert screenshots here)*
+<img width="170" height="420" alt="Simulator Screenshot - iPhone 16 Pro - 2025-08-03 at 01 21 08" src="https://github.com/user-attachments/assets/7dc21ec8-840b-4cae-aed7-42b6391007bb" />
 
 ---
 
