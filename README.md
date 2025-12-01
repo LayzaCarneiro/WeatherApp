@@ -16,6 +16,7 @@ It uses the [OpenWeather API](https://openweathermap.org/) to fetch current cond
 ---
 
 ## 🖼️ Screenshots
+
 <img width="170" height="420" alt="Simulator Screenshot - iPhone 16 Pro - 2025-08-03 at 01 21 08" src="https://github.com/user-attachments/assets/7dc21ec8-840b-4cae-aed7-42b6391007bb" />
 
 ---
@@ -25,7 +26,8 @@ It uses the [OpenWeather API](https://openweathermap.org/) to fetch current cond
 * Swift
 * UIKit
 * WeatherAPI (RESTful service)
-* URLSession for networking
+* **Alamofire** (network layer)
+* **CocoaPods** (dependency manager)
 * JSON decoding with `Codable`
 
 ---
@@ -39,15 +41,29 @@ git clone https://github.com/LayzaCarneiro/WeatherNow.git
 cd WeatherNow
 ```
 
-### 2. Open in Xcode
+### 2. Install dependencies (CocoaPods)
+
+Make sure you have **CocoaPods** installed:
 
 ```bash
-open WeatherNow.xcodeproj
+sudo gem install cocoapods
+```
+
+Then run:
+
+```bash
+pod install
+```
+
+And **open the workspace**:
+
+```bash
+open WeatherNow.xcworkspace
 ```
 
 ### 3. Configure your API key
 
-Create a `APIKey.plist` file (or use your preferred method) and add your API key:
+Create a `APIKey.plist` file and add your API key:
 
 ```xml
 <dict>
@@ -56,17 +72,27 @@ Create a `APIKey.plist` file (or use your preferred method) and add your API key
 </dict>
 ```
 
-You can get a free key from [https://www.weatherapi.com/](https://www.weatherapi.com/).
-
 ---
 
 ## 📦 Dependencies
 
-No external dependencies – pure UIKit and native Swift features.
+The project uses the following external libraries:
+
+### **CocoaPods**
+
+This project manages dependencies using **CocoaPods**.
+
+### **Alamofire**
+
+HTTP networking is powered by:
+
+```
+pod 'Alamofire', '~> 5.8'
+```
 
 ---
 
 ## 📌 Notes
 
-* Make sure your API key is valid and has access to the forecast endpoint.
+* Make sure your API key is valid and has access to the OpenWeather forecast endpoint.
 * This project is intended for educational and demo purposes.
